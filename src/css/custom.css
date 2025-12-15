@@ -1,0 +1,244 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Physical AI Book Brand Colors - Modern Tech Palette */
+  --ifm-color-primary: #2563eb; /* Modern blue */
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1a46c4;
+  --ifm-color-primary-darkest: #153a9e;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+
+  /* Secondary colors */
+  --ifm-color-secondary: #8b5cf6; /* Purple accent */
+  --ifm-color-secondary-dark: #7c3aed;
+  --ifm-color-secondary-darker: #6d28d9;
+  --ifm-color-secondary-darkest: #5b21b6;
+  --ifm-color-secondary-light: #a78bfa;
+  --ifm-color-secondary-lighter: #c4b5fd;
+  --ifm-color-secondary-lightest: #e9d5ff;
+
+  /* Typography improvements */
+  --ifm-font-size-base: 17px;
+  --ifm-line-height-base: 1.7;
+  --ifm-paragraph-margin-bottom: 1.2rem;
+
+  /* Spacing improvements */
+  --ifm-spacing-horizontal: 1.5rem;
+  --ifm-spacing-vertical: 1.5rem;
+
+  /* Code block improvements */
+  --ifm-code-font-size: 90%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Card improvements */
+  --ifm-card-background-color: #ffffff;
+  --ifm-card-border-radius: 0.75rem;
+  --ifm-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  /* Navbar improvements */
+  --ifm-navbar-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --ifm-navbar-link-hover-color: var(--ifm-color-primary);
+
+  /* Sidebar improvements */
+  --ifm-menu-color: #374151;
+  --ifm-menu-color-active: var(--ifm-color-primary);
+  --ifm-menu-color-background-active: #eff6ff;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #60a5fa; /* Lighter blue for dark mode */
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1d4ed8;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+
+  /* Secondary colors for dark mode */
+  --ifm-color-secondary: #c4b5fd; /* Light purple accent */
+  --ifm-color-secondary-dark: #a78bfa;
+  --ifm-color-secondary-darker: #8b5cf6;
+  --ifm-color-secondary-darkest: #7c3aed;
+  --ifm-color-secondary-light: #d8b4fe;
+  --ifm-color-secondary-lighter: #e9d5ff;
+  --ifm-color-secondary-lightest: #f3e8ff;
+
+  /* Dark mode specific variables */
+  --ifm-background-color: #0f172a; /* Dark slate background */
+  --ifm-background-surface-color: #1e293b; /* Darker surface */
+  --ifm-text-color: #f1f5f9; /* Light text */
+  --ifm-text-color-secondary: #cbd5e1; /* Secondary text */
+
+  /* Dark mode card improvements */
+  --ifm-card-background-color: #1e293b;
+  --ifm-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.08);
+
+  /* Dark mode menu improvements */
+  --ifm-menu-color: #cbd5e1;
+  --ifm-menu-color-active: var(--ifm-color-primary);
+  --ifm-menu-color-background-active: #334155;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Typography improvements */
+.docusaurus-markdown-content {
+  font-size: var(--ifm-font-size-base);
+  line-height: var(--ifm-line-height-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Card styling for content sections */
+.card {
+  border: none;
+  box-shadow: var(--ifm-card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Improved code block styling */
+.code-block {
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Navbar improvements */
+.navbar {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  height: 4.5rem;
+}
+
+.navbar__title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Sidebar improvements */
+.menu__list-item {
+  margin-bottom: 0.25rem;
+}
+
+.menu__link {
+  border-radius: 0.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  transition: all 0.2s ease;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: var(--ifm-menu-color-background-active);
+  font-weight: 500;
+}
+
+/* Footer improvements */
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Doc item improvements */
+.docItemContainer {
+  padding: 1rem 0 2rem;
+}
+
+/* Breadcrumb improvements */
+.theme-edit-this-page {
+  font-size: 0.95rem;
+}
+
+/* Button styling */
+.button {
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+/* Improved spacing for document content */
+.markdown {
+  padding: 0 0 2rem;
+}
+
+.markdown > p {
+  margin-bottom: 1.2rem;
+}
+
+.markdown > h1:first-child {
+  margin-top: 0;
+}
+
+/* Table styling */
+.markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown table tr {
+  border-bottom: 1px solid #d1d5db;
+}
+
+[data-theme='dark'] .markdown table tr {
+  border-bottom: 1px solid #374151;
+}
+
+.markdown table th,
+.markdown table td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+/* Blockquote styling */
+blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  padding-left: 1.25rem;
+  margin-left: 0;
+  margin-right: 0;
+  color: var(--ifm-color-emphasis-700);
+  font-style: italic;
+}

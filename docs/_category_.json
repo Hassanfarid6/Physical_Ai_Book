@@ -1,0 +1,8 @@
+{
+  "label": "Physical AI Book",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn about Physical AI concepts, robot control systems, and simulation modeling."
+  }
+}
