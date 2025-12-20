@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Physical AI Book',
-  tagline: 'A hands-on approach to learning Physical AI',
+  title: 'Physical AI & Humanoid Robotics',
+  tagline: 'A comprehensive guide to embodied artificial intelligence',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -83,9 +83,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Physical AI Book',
+        title: 'Physical AI & Humanoid Robotics',
         logo: {
-          alt: 'Physical AI Book Logo',
+          alt: 'Physical AI & Humanoid Robotics Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -93,7 +93,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Chapters',
+            label: 'Book',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -107,19 +107,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Chapters',
+            title: 'Book',
             items: [
               {
-                label: 'Getting Started',
-                to: '/docs/chapter-1/lesson-1-getting-started-with-physical-ai',
+                label: 'Introduction',
+                to: '/docs/',
               },
               {
-                label: 'Robot Control Systems',
-                to: '/docs/chapter-1/lesson-2-understanding-robot-control-systems',
+                label: 'Module 1: ROS 2',
+                to: '/docs/module1_ros2',
               },
               {
-                label: 'Simulation & Modeling',
-                to: '/docs/chapter-1/lesson-3-exploring-simulation-and-modeling',
+                label: 'Module 2: Digital Twin',
+                to: '/docs/module2_digital_twin',
               },
             ],
           },
@@ -150,7 +150,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Physical AI Book. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Project. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
