@@ -24,16 +24,30 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Module 1: The Robotic Nervous System (ROS 2)',
+      label: 'Module 1: The Robotic Nervous System (ROS 2) - Middleware for Humanoid Control',
       items: [
         'module1_ros2',
       ],
     },
     {
       type: 'category',
-      label: 'Module 2: The Digital Twin (Gazebo & Unity)',
+      label: 'Module 2: The Digital Twin (Gazebo & Unity) - Physics Simulation and Environment Modeling',
       items: [
         'module2_digital_twin',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 3: The AI-Robot Brain (NVIDIA Isaac™) - Advanced Perception, Training, and Navigation',
+      items: [
+        'module3_ai_robot_brain',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 4: Vision-Language-Action (VLA) - Convergence of LLMs and Robotics',
+      items: [
+        'module4_vla',
       ],
     },
     {

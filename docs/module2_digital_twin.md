@@ -1,8 +1,8 @@
-# Module 2: The Digital Twin (Gazebo & Unity)
+# Module 2: The Digital Twin (Gazebo & Unity) - Physics Simulation and Environment Modeling
 
 ## Overview
 
-In this module, we'll create high-fidelity simulation environments using Gazebo and Unity as digital twins for our humanoid robot. A digital twin is a virtual representation of a physical system that enables testing, validation, and training before deployment to real hardware. We'll implement physics simulation, environment design, human-robot interaction, and sensor simulation.
+This module focuses on creating high-fidelity simulation environments using Gazebo and Unity as digital twins for our humanoid robot. A digital twin represents a virtual counterpart of the physical system that enables comprehensive testing, validation, and training before deployment to real hardware. We'll implement sophisticated physics simulation including gravity, collisions, and friction, create Gazebo world environments for humanoid simulation, utilize Unity for high-fidelity rendering and human-robot interaction, and develop comprehensive sensor simulation for LiDAR, depth cameras, and IMUs with proper synchronization to the ROS 2 framework.
 
 ## Learning Objectives
 

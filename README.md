@@ -34,11 +34,13 @@ Learners will develop a comprehensive humanoid robot control system featuring:
 
 The educational content is systematically organized into professional modules:
 
-1. **Module 1**: The Robotic Nervous System (ROS 2 Architecture)
-2. **Module 2**: The Digital Twin Framework (Gazebo & Unity Integration)
-3. **Implementation Guide**: Comprehensive step-by-step system construction
-4. **Advanced Techniques**: Reinforcement learning, sensor fusion, and adaptive control
-5. **Technical Appendices**: Reference materials, troubleshooting, and best practices
+1. **Module 1**: The Robotic Nervous System (ROS 2) - Middleware for Humanoid Control
+2. **Module 2**: The Digital Twin (Gazebo & Unity) - Physics Simulation and Environment Modeling
+3. **Module 3**: The AI-Robot Brain (NVIDIA Isaac™) - Advanced Perception, Training, and Navigation
+4. **Module 4**: Vision-Language-Action (VLA) - Convergence of LLMs and Robotics
+5. **Implementation Guide**: Comprehensive step-by-step system construction
+6. **Advanced Techniques**: Reinforcement learning, sensor fusion, and adaptive control
+7. **Technical Appendices**: Reference materials, troubleshooting, and best practices
 
 ## Technology Architecture
 
@@ -50,12 +52,17 @@ This project leverages an industry-standard technology stack for Physical AI dev
 - **Gazebo Garden/Fortress**: For high-fidelity physics-based simulation and testing
 - **Unity 2022.3 LTS**: For real-time visualization and mixed reality applications
 - **NVIDIA Isaac Sim**: For GPU-accelerated AI computing and photorealistic simulation
+- **Isaac ROS**: For hardware-accelerated perception pipelines and robotics applications
+- **Nav2**: For autonomous navigation and path planning
+- **OpenAI Whisper**: For voice command processing and speech-to-text conversion
 - **URDF (Unified Robot Description Format)**: For precise robot modeling and description
 - **Linux Ubuntu 22.04 LTS**: For stable development and deployment environments
 
 ### Supporting Infrastructure
 - Physics simulation engines for comprehensive testing and validation
 - Machine learning frameworks (PyTorch/TensorFlow) for AI model development
+- Computer vision libraries (OpenCV) for perception systems
+- Large Language Model interfaces for cognitive planning
 - Robotics middleware for seamless hardware integration
 - Real-time control systems for responsive robot operation
 
