@@ -85,6 +85,20 @@ npm install
 npm run start
 ```
 
+## Deliverables
+
+This project delivers a comprehensive set of resources for Physical AI and humanoid robotics:
+
+- **Full project folder structure**: Organized according to ROS 2 best practices
+- **ROS 2 workspace and package layout**: Complete with all necessary packages and configurations
+- **Sample humanoid URDF**: Detailed robot model with proper kinematics and dynamics
+- **Python ROS 2 node implementations**: Complete nodes for control, perception, and AI
+- **Gazebo simulation world**: Realistic environments for testing and development
+- **Unity interaction demo**: Visualization and interaction capabilities
+- **NVIDIA Isaac simulation setup**: Photorealistic simulation and synthetic data generation
+- **VLA pipeline design**: Complete Vision-Language-Action implementation
+- **Complete README and documentation**: Comprehensive guides and tutorials
+
 ## Target Audience
 
 This framework is designed for:

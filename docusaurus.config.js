@@ -93,12 +93,31 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Book',
+            label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/docs/intro_to_physical_ai',
+            label: 'Introduction',
+            position: 'left',
+          },
+          {
+            to: '/docs/module1_ros2',
+            label: 'Modules',
+            position: 'left',
+          },
+          {
+            to: '/blog',
+            label: 'Research Insights',
+            position: 'left',
+          },
           {
             href: 'https://github.com/physical-ai/physical-ai-book',
-            label: 'GitHub',
+            label: 'Source Code',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/physical-ai/physical-ai-book/issues',
+            label: 'Support',
             position: 'right',
           },
         ],
@@ -107,50 +126,70 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Book',
+            title: 'Academic Content',
             items: [
               {
-                label: 'Introduction',
-                to: '/docs/',
+                label: 'Introduction to Physical AI',
+                to: '/docs/intro_to_physical_ai',
               },
               {
-                label: 'Module 1: ROS 2',
+                label: 'Module 1: ROS 2 Middleware',
                 to: '/docs/module1_ros2',
               },
               {
                 label: 'Module 2: Digital Twin',
                 to: '/docs/module2_digital_twin',
               },
-            ],
-          },
-          {
-            title: 'Resources',
-            items: [
               {
-                label: 'Docusaurus',
-                href: 'https://docusaurus.io',
+                label: 'Module 3: NVIDIA Isaac AI',
+                to: '/docs/module3_ai_robot_brain',
               },
               {
-                label: 'React',
-                href: 'https://reactjs.org',
+                label: 'Module 4: Vision-Language-Action',
+                to: '/docs/module4_vla',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Technical Resources',
             items: [
               {
-                label: 'Blog',
+                label: 'ROS 2 Documentation',
+                href: 'https://docs.ros.org/en/humble/',
+              },
+              {
+                label: 'NVIDIA Isaac',
+                href: 'https://developer.nvidia.com/isaac-ros',
+              },
+              {
+                label: 'OpenAI API',
+                href: 'https://platform.openai.com/docs/api-reference',
+              },
+            ],
+          },
+          {
+            title: 'Project Links',
+            items: [
+              {
+                label: 'Research Blog',
                 to: '/blog',
               },
               {
-                label: 'GitHub',
+                label: 'Source Repository',
                 href: 'https://github.com/physical-ai/physical-ai-book',
+              },
+              {
+                label: 'Issue Tracker',
+                href: 'https://github.com/physical-ai/physical-ai-book/issues',
+              },
+              {
+                label: 'Contributing Guide',
+                href: 'https://github.com/physical-ai/physical-ai-book/blob/main/CONTRIBUTING.md',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Project. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Academic Project. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
