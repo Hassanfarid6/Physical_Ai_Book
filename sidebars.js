@@ -15,37 +15,46 @@
  @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
  */
 const sidebars = {
-  // Manual sidebar for the Physical AI Book
+  // Professional sidebar for the Physical AI & Humanoid Robotics Documentation
   tutorialSidebar: [
     {
       type: 'category',
-      label: 'Introduction',
-      items: ['intro'],
+      label: 'Introduction to Physical AI & Humanoid Robotics',
+      items: ['intro_to_physical_ai'],
     },
     {
       type: 'category',
-      label: 'Chapter 1: Getting Started with Physical AI',
+      label: 'Module 1: The Robotic Nervous System (ROS 2)',
       items: [
-        'chapter-1/lesson-1-getting-started-with-physical-ai',
-        'chapter-1/lesson-2-understanding-robot-control-systems',
-        'chapter-1/lesson-3-exploring-simulation-and-modeling'
+        'module1_ros2',
       ],
     },
     {
       type: 'category',
-      label: 'Tutorial Basics',
+      label: 'Module 2: The Digital Twin (Gazebo & Unity)',
       items: [
-        'tutorial-basics/create-a-document',
-        'tutorial-basics/create-a-page',
-        'tutorial-basics/deploy-your-site',
+        'module2_digital_twin',
       ],
     },
     {
       type: 'category',
-      label: 'Tutorial Extras',
+      label: 'Implementation Guide',
       items: [
-        'tutorial-extras/manage-docs-versions',
-        'tutorial-extras/translate-your-site',
+        'project_implementation',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Advanced Techniques',
+      items: [
+        'advanced_topics',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Appendices & References',
+      items: [
+        'appendices',
       ],
     },
   ],
