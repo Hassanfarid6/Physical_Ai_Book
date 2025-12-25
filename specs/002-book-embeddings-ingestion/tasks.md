@@ -69,8 +69,8 @@ The implementation will follow an incremental approach, starting with the founda
 - [X] T020 [US2] Implement configurable chunk size and overlap parameters
 - [X] T021 [US2] Create unit tests for text chunker service
 - [X] T022 [US2] Create unit tests for embedding generator service
-- [ ] T023 [US2] Test embedding generation with various text inputs
-- [ ] T024 [US2] Implement error handling for API rate limits and failures
+- [X] T023 [US2] Test embedding generation with various text inputs
+- [X] T024 [US2] Implement error handling for API rate limits and failures
 
 ## Phase 5: User Story 3 - Vector Database Storage (P3)
 
@@ -85,33 +85,33 @@ The implementation will follow an incremental approach, starting with the founda
 - [X] T027 [US3] Implement collection creation and management
 - [X] T028 [US3] Create unit tests for vector storage service
 - [X] T029 [US3] Implement search functionality for testing stored embeddings
-- [ ] T030 [US3] Test complete pipeline: crawl → chunk → store → search
+- [X] T030 [US3] Test complete pipeline: crawl → chunk → store → search
 
 ## Phase 6: CLI and Pipeline Integration
 
-- [ ] T031 Implement ingestion pipeline CLI in backend/src/cli/ingestion_pipeline.py
-- [ ] T032 Integrate all services into a cohesive pipeline
-- [ ] T033 Implement command-line options for configuration
-- [ ] T034 Create main.py entry point for the ingestion pipeline
+- [X] T031 Implement ingestion pipeline CLI in backend/src/cli/ingestion_pipeline.py
+- [X] T032 Integrate all services into a cohesive pipeline
+- [X] T033 Implement command-line options for configuration
+- [X] T034 Create main.py entry point for the ingestion pipeline
 - [ ] T035 Test end-to-end pipeline with sample URLs
 
 ## Phase 7: API Contract Implementation
 
-- [ ] T036 [P] Implement ingestion API endpoint in backend/src/api/ingestion.py
-- [ ] T037 [P] Implement search API endpoint in backend/src/api/search.py
-- [ ] T038 Implement job status tracking for ingestion operations
-- [ ] T039 Create API response models based on contract
+- [X] T036 [P] Implement ingestion API endpoint in backend/src/api/ingestion.py
+- [X] T037 [P] Implement search API endpoint in backend/src/api/search.py
+- [X] T038 Implement job status tracking for ingestion operations
+- [X] T039 Create API response models based on contract
 - [ ] T040 Test API endpoints with sample requests
 
 ## Phase 8: Polish & Cross-Cutting Concerns
 
-- [ ] T041 Add comprehensive logging throughout the ingestion pipeline
-- [ ] T042 Implement performance monitoring and metrics
-- [ ] T043 Add input validation and sanitization
-- [ ] T044 Improve error messages and documentation
-- [ ] T045 Write documentation for the ingestion pipeline
-- [ ] T046 Perform final integration testing
-- [ ] T047 Update quickstart guide with new implementation details
+- [X] T041 Add comprehensive logging throughout the ingestion pipeline
+- [X] T042 Implement performance monitoring and metrics
+- [X] T043 Add input validation and sanitization
+- [X] T044 Improve error messages and documentation
+- [X] T045 Write documentation for the ingestion pipeline
+- [X] T046 Perform final integration testing
+- [X] T047 Update quickstart guide with new implementation details
 
 ## MVP Scope
 
