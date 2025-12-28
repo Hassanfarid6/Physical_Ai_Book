@@ -126,8 +126,9 @@ class EmbeddingGenerator:
                     input_type="search_document"  # Using search_document for content to be searched
                 )
                 return response
-            except cohere.CohereAPIError as e:
-                if e.http_status == 429:  # Rate limit exceeded
+            except Exception as e:
+                # Check if this is a rate limit error
+                if hasattr(e, 'status_code') and e.status_code == 429:  # Rate limit exceeded
                     logger.warning(f"Rate limit exceeded on attempt {attempt + 1}. Waiting...")
                     if attempt < self.max_retries:
                         time.sleep(self.delay * (2 ** attempt))  # Exponential backoff
@@ -135,6 +136,9 @@ class EmbeddingGenerator:
                     else:
                         logger.error(f"Rate limit exceeded after {self.max_retries} retries")
                         raise e
+                elif hasattr(e, 'status_code') and e.status_code == 401:  # Unauthorized
+                    logger.error(f"Unauthorized access to Cohere API: {str(e)}")
+                    raise e
                 else:
                     logger.error(f"Cohere API error: {str(e)}")
                     raise e
