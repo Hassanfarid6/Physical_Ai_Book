@@ -52,21 +52,6 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -108,11 +93,6 @@ const config = {
           {
             to: '/docs/appendices',
             label: 'Appendices',
-            position: 'left',
-          },
-          {
-            to: '/blog',
-            label: 'Research Insights',
             position: 'left',
           },
           {
@@ -179,10 +159,6 @@ const config = {
           {
             title: 'Project Links',
             items: [
-              {
-                label: 'Research Blog',
-                to: '/blog',
-              },
               {
                 label: 'Source Repository',
                 href: 'https://github.com/physical-ai/physical-ai-book',
