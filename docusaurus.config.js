@@ -106,6 +106,11 @@ const config = {
             position: 'left',
           },
           {
+            to: '/docs/appendices',
+            label: 'Appendices',
+            position: 'left',
+          },
+          {
             to: '/blog',
             label: 'Research Insights',
             position: 'left',
@@ -147,6 +152,10 @@ const config = {
               {
                 label: 'Module 4: Vision-Language-Action',
                 to: '/docs/module4_vla',
+              },
+              {
+                label: 'Appendices & References',
+                to: '/docs/appendices',
               },
             ],
           },
