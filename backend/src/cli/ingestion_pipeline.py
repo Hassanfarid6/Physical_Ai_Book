@@ -174,6 +174,9 @@ class IngestionPipeline:
                 self.settings.COLLECTION_NAME = collection_name
 
             # Step 1: Crawl
+            # Add the default URL if no URLs provided
+            if not urls:
+                urls = ["https://physical-ai-book.example.com"]
             crawled_content = self.run_crawl(urls)
             if not crawled_content:
                 logger.error("No content crawled, stopping pipeline")
@@ -248,6 +251,76 @@ def main():
         urls = [url.strip() for url in args.urls.split(',')]
         results = pipeline.run_crawl(urls)
         print(f"Crawled {len(results)} URLs")
+
+    elif args.command == 'embed':
+        # For embed command, we need to load content from source path
+        # This would typically be pre-processed chunks ready for embedding
+        from src.models.document_chunk import DocumentChunk
+        import json
+
+        # Load content from source path
+        try:
+            with open(args.source_path, 'r', encoding='utf-8') as f:
+                content_data = json.load(f)
+
+            # Convert content data to DocumentChunk objects
+            chunks = []
+            for item in content_data:
+                chunk = DocumentChunk.create(
+                    content=item.get('content', ''),
+                    source_url=item.get('url', ''),
+                    position=item.get('position', 0),
+                    metadata=item.get('metadata', {})
+                )
+                chunks.append(chunk)
+
+            # Generate embeddings
+            embeddings = pipeline.run_embed(chunks)
+            print(f"Generated {len(embeddings)} embeddings")
+
+            # Optionally store them
+            success = pipeline.run_store(embeddings)
+            if success:
+                print("Embeddings stored successfully!")
+                sys.exit(0)
+            else:
+                print("Failed to store embeddings!")
+                sys.exit(1)
+
+        except FileNotFoundError:
+            print(f"Source file not found: {args.source_path}")
+            sys.exit(1)
+        except json.JSONDecodeError:
+            print(f"Invalid JSON in source file: {args.source_path}")
+            sys.exit(1)
+        except Exception as e:
+            logger.error(f"Error during embed command: {str(e)}")
+            print(f"Error during embed command: {str(e)}")
+            sys.exit(1)
+
+    elif args.command == 'store':
+        # For store command, we need to load embeddings from path
+        import pickle
+
+        try:
+            with open(args.embeddings_path, 'rb') as f:
+                embeddings = pickle.load(f)
+
+            success = pipeline.run_store(embeddings)
+            if success:
+                print("Embeddings stored successfully!")
+                sys.exit(0)
+            else:
+                print("Failed to store embeddings!")
+                sys.exit(1)
+
+        except FileNotFoundError:
+            print(f"Embeddings file not found: {args.embeddings_path}")
+            sys.exit(1)
+        except Exception as e:
+            logger.error(f"Error during store command: {str(e)}")
+            print(f"Error during store command: {str(e)}")
+            sys.exit(1)
 
     elif args.command == 'pipeline':
         urls = [url.strip() for url in args.urls.split(',')]
