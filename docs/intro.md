@@ -53,5 +53,5 @@ This book embraces a **hands-on learning first** approach. Rather than focusing 
 
 Begin your journey into Physical AI by exploring Chapter 1, where we'll introduce the fundamental concepts that form the foundation of all Physical AI systems.
 
-Ready to begin? Continue to the first lesson: [Getting Started with Physical AI](./chapter-1/lesson-1-getting-started-with-physical-ai.md).
+Ready to begin? Continue to the first lesson: [Getting Started with Physical AI](intro_to_physical_ai.md).
 

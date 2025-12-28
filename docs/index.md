@@ -7,8 +7,8 @@ Welcome to the comprehensive guide on Physical AI & Humanoid Robotics. This book
 1. [Introduction to Physical AI](intro_to_physical_ai.md)
 2. [Module 1: The Robotic Nervous System (ROS 2)](module1_ros2.md)
 3. [Module 2: The Digital Twin (Gazebo & Unity)](module2_digital_twin.md)
-4. [Project Implementation Guide](project_implementation.md)
-5. [Advanced Topics in Physical AI](advanced_topics.md)
+4. [Module 3: The AI-Robot Brain (NVIDIA Isaac™)](module3_ai_robot_brain.md)
+5. [Module 4: Vision-Language-Action (VLA)](module4_vla.md)
 6. [Appendices](appendices.md)
 
 ## About This Book
