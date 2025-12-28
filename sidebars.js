@@ -52,16 +52,22 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Implementation Guide',
+      label: 'Tutorial Basics',
       items: [
-        'project_implementation',
+        'tutorial-basics/create-a-page',
+        'tutorial-basics/create-a-document',
+        'tutorial-basics/create-a-blog-post',
+        'tutorial-basics/markdown-features',
+        'tutorial-basics/congratulations',
+        'tutorial-basics/deploy-your-site',
       ],
     },
     {
       type: 'category',
-      label: 'Advanced Techniques',
+      label: 'Tutorial Extras',
       items: [
-        'advanced_topics',
+        'tutorial-extras/manage-docs-versions',
+        'tutorial-extras/translate-your-site',
       ],
     },
     {
